@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3db1a8">
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:id="@+id/jkzx_fanhui"
+            android:background="@mipmap/zuoyi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="养生常识"
+            android:textSize="19dp"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/yangshengchangshi">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@android:id/tabcontent">
+                        <ImageView
+                            android:id="@+id/jkzx_jijiu"
+                            android:layout_width="match_parent"
+                            android:layout_height="800dp"
+                            android:background="@mipmap/sy_yingyangchangshi"/>
+                        <ImageView
+                            android:id="@+id/jkzx_kuaiche"
+                            android:layout_width="match_parent"
+                            android:layout_height="700dp"
+                            android:background="@mipmap/sy_yingyangchangshi"/>
+                        <ImageView
+                            android:id="@+id/jkzx_yingyang"
+                            android:layout_width="match_parent"
+                            android:layout_height="900dp"
+                            android:background="@mipmap/sy_yingyangchangshi"/>
+                    </FrameLayout>
+                </ScrollView>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

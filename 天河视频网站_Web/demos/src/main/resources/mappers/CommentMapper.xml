@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+namespace:mapper文件对应的dao接口的全类名(包名+类名)
+id:必须跟dao接口的方法名保持一致
+-->
+
+<mapper namespace="com.example.demos.dao.CommentDao">
+    <resultMap id="userMap" type="Comment">
+        <id column="d_id" property="dId"/>
+        <result column="v_id" property="vId"/>
+        <result column="d_text" property="dText"/>
+        <result column="d_date" property="dDate"/>
+    </resultMap>
+
+    <select id="cLists" resultMap="userMap">
+        select * from danmu where v_id=#{vid}
+    </select>
+    <insert id="cInsert">
+        insert into danmu(v_id,d_text,d_date)
+        values(#{vid},#{text},#{date})
+    </insert>
+</mapper>

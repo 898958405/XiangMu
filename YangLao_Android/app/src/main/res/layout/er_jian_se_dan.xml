@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3db1a8">
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/jk_jiancedan"
+            android:textColor="#fff"
+            android:background="@mipmap/zuoyi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="健康监测数据"
+            android:textSize="19dp"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+</LinearLayout>

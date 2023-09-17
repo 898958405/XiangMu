@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demos.dao.VideoDao">
+    <resultMap id="userMaps" type="Video">
+        <id column="v_id" property="vId"/>
+        <result column="u_id" property="uId"/>
+        <result column="v_introduction" property="vIntroduction"/>
+        <result column="v_address" property="vAddress"/>
+        <result column="v_counts" property="vCountsvCounts"/>
+        <result column="classify" property="classify"/>
+        <result column="v_name" property="vName"/>
+        <result column="v_img" property="vImg"/>
+    </resultMap>
+    <select id="List" resultMap="userMaps">
+        select * from video
+    </select>
+    <select id="videoList" resultMap="userMaps">
+        select * from video where u_id=#{uid}
+    </select>
+    <update id="vInfoUpdate">
+        update video set
+        v_name=#{vname},
+        classify=#{vclassify},
+        v_introduction=#{vIntroduction}
+        where v_id=#{vid}
+    </update>
+    <delete id="vDelete">
+        delete from video where v_id=#{vid}
+    </delete>
+    <insert id="vUpload">
+        insert into video(u_id,v_introduction,v_address,classify,v_name)
+            values(#{uid},#{introduction},#{address},#{region},#{title})
+    </insert>
+    <select id="videoItem" resultMap="userMaps">
+        select * from video where v_id=#{vid}
+    </select>
+    <select id="vSearch" resultMap="userMaps">
+        SELECT * FROM video WHERE v_name LIKE CONCAT('%', #{keys}, '%');
+    </select>
+    <select id="PaiHang" resultMap="userMaps">
+        SELECT * FROM video ORDER BY v_counts DESC LIMIT 10;
+    </select>
+</mapper>

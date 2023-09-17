@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3db1a8"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:id="@+id/ss_fanhui"
+            android:background="@mipmap/zuoyi"/>
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="9"
+            android:background="@drawable/c_xiaohudu_sousuokuang"
+            android:drawableLeft="@mipmap/sy_fangdajing"
+            android:layout_marginTop="13dp"
+            android:singleLine="true"
+            android:windowSoftInputMode="adjustUnspecified"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:drawablePadding="10dp"
+            android:paddingLeft="9dp"
+            android:id="@+id/ss_sousuo"
+            android:paddingTop="3dp"
+            android:textColorHint="#d1d1d1"
+            android:textSize="15dp"
+            android:imeOptions="actionSearch"
+            android:textColor="#201F1F"
+            android:hint="请输入服务，如：就餐助餐" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="热门服务："
+            android:textSize="15sp"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="陪同就医"
+            android:id="@+id/ss_jiuyi"
+            android:textSize="15sp"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="康复治疗"
+            android:id="@+id/ss_zhiliao"
+            android:textSize="15sp"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="就餐助餐"
+            android:id="@+id/ss_zhucan"
+            android:textSize="15sp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

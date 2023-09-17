@@ -1,0 +1,32 @@
+# 端口号
+server:
+  port: 8081
+
+
+# 数据源配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shi_xun2?useSSL=false&serverTimezone=UTC&characterEncoding=utf-8
+    username: root
+    password: 123456
+    # 上传文件的位置
+  servlet:
+    multipart:
+      location: D:/Local/Temp/uploads
+  # 打开Spring的循环依赖支持
+  main:
+    allow-circular-references: true
+  # 解决spring boot 和 swagger 版本冲突
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+# Mybatis 配置
+mybatis:
+  # 配置读取mapper文件
+  mapper-locations: classpath:/mappers/*.xml
+  # 配置实体类所在的包，配置之后在mapper.xml文件中使用实体类时只写类名即可
+  type-aliases-package: com.example.demos.pojo
+
+

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3db1a8">
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/yj_fanhui"
+            android:textColor="#fff"
+            android:background="@mipmap/zuoyi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="预警信息"
+            android:textSize="19dp"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="体温"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="血压"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="脉搏"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="血糖（空腹）"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="血糖（餐后两个小时）"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="甘油三酯"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="总胆固醇"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="高密度脂蛋白"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="低密度脂蛋白"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="尿酸男"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="尿酸女"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="脂肪男"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="13dp"
+                android:text="脂肪女"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

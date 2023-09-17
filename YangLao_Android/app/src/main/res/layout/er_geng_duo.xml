@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3db1a8">
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:id="@+id/gd_fanhui"
+            android:background="@mipmap/zuoyi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="服务列表"
+            android:textSize="19dp"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/gd_kf_liaoli"
+                android:src="@mipmap/sy_kangfu_liaoli" />
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="康复理疗" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f2f3f8" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/gd_jk_jianse"
+                android:src="@mipmap/sy_jiankang_jiance" />
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="健康检测" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f2f3f8" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/gd_xl_guanai"
+                android:src="@mipmap/sy_xinliguanai" />
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="心理关爱" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f2f3f8" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/gd_pt_jiuyi"
+                android:src="@mipmap/sy_peitong_jiuyi" />
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="陪同就医" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f3f8" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/gd_yh_dingzhi"
+                android:src="@mipmap/sy_yihu_dingzhi" />
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医护定制" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f2f3f8" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/gd_jz_fuwu"
+                android:src="@mipmap/sy_jiazheng_fuwu" />
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="家政服务" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f2f3f8" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/gd_jiucan"
+                android:src="@mipmap/sy_jiucan_zhucan" />
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="就餐助餐" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f2f3f8" />
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <!---->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:id="@+id/gd_zl_huli"
+            android:src="@mipmap/sy_zhaoliao_huli" />
+        <!---->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="照料护理" />
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f3f8" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/gd_zhuanghuxian"
+                android:src="@mipmap/sy_lunyi" />
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="长护险" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f2f3f8" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"/>
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"/>
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!---->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"/>
+            <!---->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#f2f3f8" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

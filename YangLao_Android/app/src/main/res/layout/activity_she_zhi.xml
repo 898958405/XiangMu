@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3db1a8">
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/sz_fanhui"
+            android:textColor="#fff"
+            android:background="@mipmap/zuoyi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="设置"
+            android:textSize="19dp"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="5dp"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:text="修改密码"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/sz_gaimima"
+            android:layout_marginRight="1dp"
+            android:background="@mipmap/youyi"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/b_xiaohudu_anniu"
+        android:layout_margin="15dp"
+        android:text="退出登录"
+        android:id="@+id/sz_tuichu"
+        android:textSize="18dp"
+        android:textColor="#fff"/>
+
+</LinearLayout>

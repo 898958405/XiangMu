@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3db1a8">
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/gm_fanhui"
+            android:textColor="#fff"
+            android:background="@mipmap/zuoyi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textColor="#fff"
+            android:textSize="19dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="0dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="请输入你的手机号"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:textColorHint="#8E8C8C"
+            android:id="@+id/gm_shoujihao"
+            android:paddingBottom="10dp"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/a_shoujihao"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="密保问题：你初中老师是谁？"
+            android:inputType="text"
+            android:id="@+id/gm_mibao"
+            android:textColorHint="#8E8C8C"
+            android:paddingBottom="10dp"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/a_mibao" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="请输入新密码(6 ~ 12位)"
+            android:inputType="textPassword"
+            android:id="@+id/gm_mima"
+            android:textColorHint="#8E8C8C"
+            android:paddingBottom="10dp"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/a_mima"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/b_xiaohudu_anniu"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="确认修改"
+            android:id="@+id/gm_queren"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+    </LinearLayout>
+</LinearLayout>

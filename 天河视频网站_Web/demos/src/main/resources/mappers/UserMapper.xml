@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+namespace:mapper文件对应的dao接口的全类名(包名+类名)
+id:必须跟dao接口的方法名保持一致
+-->
+
+<mapper namespace="com.example.demos.dao.UserDao">
+    <resultMap id="userMap" type="User">
+        <id column="u_id" property="uId"/>
+        <result column="u_name" property="uName"/>
+        <result column="u_password" property="uPassword"/>
+        <result column="u_nickname" property="uNickName"/>
+        <result column="gender" property="uGender"/>
+        <result column="admin" property="uAdmin"/>
+        <result column="age" property="uAge"/>
+        <result column="u_intros" property="uIntros"/>
+    </resultMap>
+    <select id="userList" resultMap="userMap">
+        select * from user where u_nickname=#{uname}
+    </select>
+    <select id="users" resultMap="userMap">
+        select u_nickname from user where u_id=#{uid}
+    </select>
+    <update id="uNameUpdate">
+        update user set u_nickname=#{uname} where u_id=#{uid}
+    </update>
+    <update id="uIntrosUpdate">
+        update user set u_intros=#{uintros} where u_id=#{uid}
+    </update>
+    <update id="uInfoUpdate">
+        update user set
+            u_name=#{uname},
+            u_password=#{upwd},
+            gender=#{ugender},
+            age=#{uage}
+        where u_id=#{uid}
+    </update>
+    <insert id="Register">
+        insert into user(u_name,u_nickname,u_password)
+        values(#{uname},#{runname},#{pwd})
+    </insert>
+    <select id="Unames" resultMap="userMap">
+        select * from user where u_name=#{uname}
+    </select>
+</mapper>
